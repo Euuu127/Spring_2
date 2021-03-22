@@ -11,7 +11,7 @@ public class Robot {
 	private String name;
 	private int price;
 	
-	public robot() {}
+	public Robot() {}
 	
 	public Robot(int age, String name, int price) {
 		this.age=age;

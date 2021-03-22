@@ -1,14 +1,18 @@
 package com.dkmk.s2.robot;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Robot {
 	
 	@Autowired
+	@Qualifier("al")
 	private Arm arm_Left;
+	
 	@Autowired
+	@Qualifier("ar")
 	private Arm arm_Right;
 	
 	public Arm getArm_Left() {
@@ -23,7 +27,6 @@ public class Robot {
 	public void setArm_Right(Arm arm_Right) {
 		this.arm_Right = arm_Right;
 	}
-	
 	
 	
 	
